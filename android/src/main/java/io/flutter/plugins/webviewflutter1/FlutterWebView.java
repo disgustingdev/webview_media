@@ -50,7 +50,7 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
     webView.getSettings().setDomStorageEnabled(true);
     webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
 
-    methodChannel = new MethodChannel(messenger, "plugins.flutter.io/webview_" + id);
+    methodChannel = new MethodChannel(messenger, "plugins.flutter.io1/webview_" + id);
     methodChannel.setMethodCallHandler(this);
 
     flutterWebViewClient = new FlutterWebViewClient(methodChannel);
